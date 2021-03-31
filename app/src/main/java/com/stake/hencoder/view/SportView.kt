@@ -44,8 +44,8 @@ class SportView @JvmOverloads constructor(context: Context, attrs: AttributeSet?
 
         paint.textSize = 100.dp
         paint.style = Paint.Style.FILL
-//        paint.getTextBounds("abab", 0, "abab".length, rect)
-//        canvas.drawText("abab", (width / 2).toFloat(), (height / 2 - (rect.top - rect.bottom) / 2).toFloat(), paint)
+        paint.getTextBounds("abab", 0, "abab".length, rect)
+        canvas.drawText("abab", (width / 2).toFloat(), (height / 2 - (rect.top - rect.bottom) / 2).toFloat(), paint)
         paint.getFontMetrics(fontMetrics)
         canvas.drawText("abab", (width / 2).toFloat(), (height / 2 - (fontMetrics.ascent + fontMetrics.descent) / 2), paint)
 

@@ -27,6 +27,7 @@ class AvatarView @JvmOverloads constructor(context: Context, attrs: AttributeSet
         canvas.drawOval(bounds, paint)
         paint.xfermode = xfermode
         canvas.drawBitmap(getAvatar(IMAGE_WITH.toInt()), IMAGE_PADDING, IMAGE_PADDING, paint)
+        paint.xfermode = null
         canvas.restoreToCount(saveLayer)
     }
 
