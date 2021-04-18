@@ -8,6 +8,7 @@ import android.graphics.Canvas
 import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
+import androidx.core.graphics.withSave
 import com.stake.hencoder.R
 import com.stake.hencoder.dp
 

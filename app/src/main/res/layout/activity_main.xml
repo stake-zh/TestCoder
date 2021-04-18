@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.stake.hencoder.view.CameraView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
 
-</com.stake.hencoder.view.CameraView>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="customView"
+            android:padding="20dp"
+            android:text="custom View" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="materialEditText"
+            android:padding="20dp"
+            android:text="MaterialEditText" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
